@@ -1,0 +1,94 @@
+.position {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    cursor: move;
+    transition: background-color 0.3s ease;
+}
+
+.sticky-note {
+  position: absolute;
+  width: 200px;
+  min-height: 200px;
+  padding: 16px;
+  border-radius: 2px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16);
+  display: flex;
+  flex-direction: column;
+}
+
+.note-header {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+
+.note-controls {
+  display: flex;
+  gap: 5px;
+}
+
+.note-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  opacity: 0.6;
+  transition: opacity 0.3s;
+}
+
+.note-btn:hover {
+  opacity: 1;
+}
+
+.note-content {
+  flex-grow: 1;
+  width: 100%;
+  resize: none;
+  border: none;
+  background: transparent;
+  font-family: inherit;
+  font-size: 14px;
+  outline: none;
+}
+
+.note-delete {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    color: red;
+}
+
+.color-picker {
+    position: absolute;
+    bottom: -40px;
+    right: 0;
+    display: flex;
+    gap: 5px;
+    background: white;
+    padding: 5px;
+    border-radius: 3px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    z-index: 100;
+}
+
+.color-option {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 1px solid #ddd;
+}
+
+.color-option.selected {
+    border: 2px solid #333;
+}

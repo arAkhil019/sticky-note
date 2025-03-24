@@ -1,0 +1,44 @@
+{
+  "name": "sticky-notes-board",
+  "version": "1.0.0",
+  "description": "A multi-user digital sticky notes board built with ReactJS and local storage.",
+  "main": "src/index.jsx",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "keywords": [
+    "react",
+    "sticky-notes",
+    "local-storage"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "git": "^0.1.5",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-draggable": "^4.4.6",
+    "react-scripts": "^5.0.1",
+    "uuid": "^11.1.0"
+  },
+  "homepage": "http://yourhomepage.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/sticky-notes-board.git"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
