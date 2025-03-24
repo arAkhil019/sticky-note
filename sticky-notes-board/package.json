@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "A multi-user digital sticky notes board built with ReactJS and local storage.",
   "main": "src/index.jsx",
+  "homepage": "https://arAkhil019.github.io/sticky-note",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -24,7 +27,6 @@
     "react-scripts": "^5.0.1",
     "uuid": "^11.1.0"
   },
-  "homepage": "http://yourhomepage.com",
   "repository": {
     "type": "git",
     "url": "https://github.com/yourusername/sticky-notes-board.git"
@@ -40,5 +42,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
   }
 }
